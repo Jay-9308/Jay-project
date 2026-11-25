@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>预订房间</title>
+</head>
+<body>
+<nav>
+  <a href=" ">首页</a >
+  <a href="/book">新建预订</a >
+  <a href="/orders">全部订单</a >
+</nav>
+<h2>客房预订</h2>
+<form method="post">
+<p>姓名：<input name="name" required></p >
+<p>身份证：<input name="idcard" required></p >
+<p>选择房间：
+<select name="roomno">
+{% for r in free_rooms %}
+<option value="{{r.room_no}}">{{r.room_no}} - {{r.room_type}} {{r.price}}元</option>
+{% endfor %}
+</select>
+</p >
+<p>入住日期：<input type="date" name="checkin" required></p >
+<p>退房日期：<input type="date" name="checkout" required></p >
+<button type="submit">提交预订</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,137 @@
+{
+  "rooms": [
+    {
+      "room_no": "1",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "2",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "3",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "4",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "已预订"
+    },
+    {
+      "room_no": "5",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "6",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "7",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "8",
+      "room_type": "单人间",
+      "price": 120,
+      "status": "空闲"
+    },
+    {
+      "room_no": "9",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "10",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "11",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "12",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "13",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "14",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "15",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "16",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "17",
+      "room_type": "双人间",
+      "price": 200,
+      "status": "空闲"
+    },
+    {
+      "room_no": "18",
+      "room_type": "豪华套房",
+      "price": 380,
+      "status": "空闲"
+    },
+    {
+      "room_no": "19",
+      "room_type": "豪华套房",
+      "price": 380,
+      "status": "空闲"
+    },
+    {
+      "room_no": "20",
+      "room_type": "豪华套房",
+      "price": 380,
+      "status": "空闲"
+    }
+  ],
+  "bookings": [
+    {
+      "bid": 1,
+      "name": "小A",
+      "id_card": "123456789",
+      "room_no": "4",
+      "checkin": "2020-11-25",
+      "checkout": "2020-11-26",
+      "total_fee": 120,
+      "status": "booked"
+    }
+  ],
+  "next_bid": 2
+}

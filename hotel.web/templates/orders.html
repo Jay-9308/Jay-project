@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>订单管理</title>
+<style>table{border-collapse:collapse}td,th{border:1px solid #888;padding:6px}</style>
+</head>
+<body>
+<nav>
+  <a href=" ">首页</a >
+  <a href="/book">新建预订</a >
+  <a href="/orders">全部订单</a >
+</nav>
+<h2>订单列表</h2>
+<table>
+<tr>
+<th>订单号</th><th>客人</th><th>房号</th><th>入住</th><th>退房</th><th>费用</th><th>状态</th><th>操作</th>
+</tr>
+{% for b in bookings %}
+<tr>
+<td>{{b.bid}}</td>
+<td>{{b.name}}</td>
+<td>{{b.room_no}}</td>
+<td>{{b.checkin}}</td>
+<td>{{b.checkout}}</td>
+<td>{{b.total_fee}}</td>
+<td>{{b.status}}</td>
+<td>
+{% if b.status=="booked" %}
+<a href="/action/in/{{b.bid}}">办理入住</a > |
+<a href="/action/cancel/{{b.bid}}">取消预订</a >
+{% elif b.status=="checked_in" %}
+<a href="/action/out/{{b.bid}}">办理退房</a >
+{% else %}
+-
+{% endif %}
+</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

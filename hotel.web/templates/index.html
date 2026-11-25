@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>酒店管理系统</title>
+<style>
+.box{border:1px solid #ccc;padding:12px;margin:8px;display:inline-block;width:160px;}
+.空闲{background:#9f9;}
+.已预订{background:#ff9;}
+.已入住{background:#f99;}
+.清洁中{background:#9cf;}
+nav{margin:10px 0}
+a{margin-right:15px}
+</style>
+</head>
+<body>
+<nav>
+  <a href=" ">首页</a >
+  <a href="/book">新建预订</a >
+  <a href="/orders">全部订单</a >
+</nav>
+<h2>房间列表</h2>
+{% for r in rooms %}
+<div class="box {{r.status}}">
+<p>房号：{{r.room_no}}</p >
+<p>{{r.room_type}}</p >
+<p>价格：{{r.price}}元/晚</p >
+<p>状态：{{r.status}}</p >
+</div>
+{% endfor %}
+{% with msg = get_flashed_messages() %}
+{% if msg %}<p style="color:green">{{msg[0]}}</p >{% endif %}
+{% endwith %}
+</body>
+</html>
